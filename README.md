@@ -1,1 +1,1 @@
-# Profit Analysis System
+# Service Center Profit Analysis System - Built on the LAMP stack
