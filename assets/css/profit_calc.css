@@ -1,0 +1,204 @@
+/*
+ * Styles for profitability calculator: wollard.php
+ * File: profit_calc.css
+ *
+**/
+
+/**Custom styles for small screens**/
+@media (max-width: 768px) {
+	/*
+	.tab_li {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	*/
+
+	.tab_link {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}
+
+/**General styling for all similar items**/
+table {
+	width: 100%;
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+}
+table thead tr th{
+	background: whitesmoke;
+	text-align: center;
+}
+table td {
+	text-align: center;
+	border: none;
+	vertical-align: middle !important;
+}
+td.no-wrap {
+	white-space: nowrap;
+}
+input[type='text']  {
+	text-align: center;
+}
+h3 {
+	margin-top: 4px;
+}
+hr {
+	border: solid #dddddd;
+	border-width: 1px 0 0;
+	margin-top: 0;
+}
+/* Give the muenu links a slow transition to hover background */
+a, button {
+	transition: .8s;
+}
+
+/** Custom class styles **/
+
+/**<p> container for print page icon**/
+@media (min-width: 768px) {
+	.printer_p {
+		text-align: right; 
+		margin: 0; 
+		padding: 0;
+	}
+}
+.glyphicon-print {
+	color: #4d4d4d;
+}	
+/** Make sure that side nav main heading does not change to gray when hover event occurs**/
+.nav>li.active>a:focus, .nav>li.active>a:hover {
+	background-color: #428bca !important;
+}
+.nav-sidebar {
+	margin-bottom: 0px !important; /* Take out padding below <ul> sidebar element*/
+}
+.active {
+	background-color: #428bca !important;
+}
+.active:hover: {
+	background-color: #428bca !important;
+}
+.sidebar_heading {
+	padding: 10px 15px 10px 3px !important;
+}
+.sidebar_button {
+	margin-left: 15px !important; /* make sure sidebar submit button is inline with rest of menu text */
+}
+.sidebar_hr {
+	margin-bottom: 10px !important;
+}
+.input-group-addon {
+	padding: 0px 5px;
+	margin: 0;
+	height: 20px !important;
+}
+.unit_input {
+	text-align: center;
+	margin: 0 !important;
+	height: 20px !important;
+	padding: 0px !important;
+	/*background-color: #dff0d8;*/
+}
+.cost_input { 
+	/*Styling for tab1 input elements*/
+	padding: 0px !important;
+	height: 30px !important;
+}
+.ops_input { 
+	/*Styling for tab2 input elements*/
+	padding: 0px !important;
+	height: 30px !important;
+	margin-bottom: 0px !important;
+}
+.pen_input {
+	text-align: center;
+	/*background-color: #d9edf7;*/
+	background-color: #dff0d8;
+}
+.text-underline {
+	text-decoration: underline;
+}
+.blue {
+	/*Used for service type main titles*/
+	color: rgb(9, 114, 165);
+}
+.red_label {
+	/*Used for table subtitles*/
+	color: #c7254e;
+}
+.add_row_link {
+	color: rgb(9, 114, 165) !important;
+	font-size: 13px;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+.dbl_underline {
+	text-decoration:underline;
+	border-bottom: 1px solid #000;
+}
+.bg-slate {
+	background-color: #b7bfc7; /*slate*/
+}
+.bg-blue {
+	background-color: #99bcdb; /*light sky blue*/
+}
+.bg-lt-blue {
+	background-color: #c1d7e9;
+}
+.section_title {
+	/*Styles for section titles*/
+	margin: 0;
+}
+.svc_subtitle {
+	font-size: 15px;
+}
+
+/**Days table custom styles**/
+.days_table {
+	margin-top: 5px;
+}
+
+/**Profit Analysis page custom styles**/
+.main_profit_title {
+	margin-bottom: 0px;
+}
+
+.express_table {
+	margin-bottom: 0;
+	/*margin-top: 5px;*/
+}
+.express_input {
+	margin-bottom: 0 !important;
+	padding: 0px !important;
+	height: 30px !important;
+}
+.express_table td {
+	height: 30px;
+}
+.profit_button {
+	margin-bottom: 3px;
+}
+
+/**Cost Avg page custom styles**/
+.cost_avg_table th {
+	text-align: left;
+}
+.glyphicon-minus-sign {
+	color: #c7254e; 
+	vertical-align: middle;
+}
+.glyphicon-minus-sign:hover {
+	cursor: pointer;
+}
+.cost_submit_td {
+	text-align: left !important; 
+	padding-left: 0 !important;
+}
+.remove_row_form {
+	padding: 0;
+	margin: 0;
+}

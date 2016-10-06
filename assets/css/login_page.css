@@ -1,0 +1,51 @@
+body {
+	background-color: #000000;
+}
+
+footer {
+	background: transparent;
+}
+
+input[type=password] {
+	margin-bottom: 15px;
+}
+
+input.reset_pass_email {
+	margin-bottom: 15px;
+}
+
+.helpful-form-link {
+	text-align: left; 
+	margin-right: 0; 
+	margin-bottom: 0;
+}
+
+.forgot-pass-button {
+	padding: 0; 
+	margin: 0; 
+	border: none; 
+	background: none; 
+	font-size: 10px; 
+}
+
+.cancel-btn {
+	font-size: 15px;
+	text-decoration: none !important;
+}
+
+.blue {
+	color: rgb(9, 114, 165);
+}
+
+.no-mgn-pad {
+	margin: 0;
+	padding: 0;
+}
+
+#reset_pword1 {
+	margin-bottom: 0;
+}
+
+.cancel-small {
+	font-size: 10px;
+}

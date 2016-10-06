@@ -1,0 +1,118 @@
+/* Give the body a light gray background */
+body {
+	background-color: #f5f5f5;
+}
+
+h2 {
+	/*font-family: "Montserrat", sans-serif;*/
+	font-size: 2.3em;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif !important;
+	font-weight: 300 !important;
+}
+
+fieldset {
+	border: 0;
+}
+
+legend {
+	font-size: 24px;
+	font-weight: 300;
+	margin-bottom: 10px !important;
+	border-bottom: 1px solid #d3d3d3 !important;
+}
+
+label {
+	font-weight: 300 !important;
+	margin-top: 4px;
+}
+
+hr {
+    border: solid #dddddd !important;
+    border-width: 1px 0 0 !important;
+    clear: both !important;
+	margin: 4rem 0 1.1875rem !important;
+   /* margin: 1.25rem 0 1.1875rem !important;*/
+    height: 0 !important;
+}
+
+input[type=text], input[type=password], select, label {
+	font-weight: 300;
+}
+/* Remove gray background in Safari */
+select {
+	-webkit-appearance: none;
+}
+
+textarea {
+	height: 160px !important;
+}
+
+a, button {
+	transition: .8s;
+}
+
+/* Override footer style */
+footer {
+	position: fixed !important;
+	background-color: #222;
+	border-color: #080808
+}
+/* Center the footer <p> text */
+.footer p {
+	padding-top: 10px;
+}
+.footer-push {
+	height: 38px;
+}
+/* Make footer copyright text a pleasing light-blue color */
+.footer-copyright {
+	color: #337ab7;
+}
+
+input[type=submit] {
+	margin: 4px 0;
+	padding: 4px;
+}
+
+.admin-options {
+	text-align: center;
+}
+
+.admin-options form, .admin-options p {
+	display: inline;
+}
+
+a.admin {
+	display: inline-block;
+	margin: 4px 0;
+	padding: 4px;
+}
+
+table#user_table thead tr {
+	background-color: #fff;
+}
+
+table.dataTable tbody tr {
+	background-color: #fff;
+}
+
+table#user_table tbody tr td {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	color: #4d4d4d;
+	border: none;
+	border-bottom: .5px solid #ccc;
+}
+
+table#user_table tr th {
+	border-bottom: 1px solid #ccc !important;
+}
+
+table#user_table {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+}

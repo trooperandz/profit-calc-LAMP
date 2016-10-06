@@ -1,0 +1,332 @@
+html {
+  /*This is from Bootstrap footer example*/
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 50px;   /* Move down content because we have a fixed navbar that is 50px tall - from Bootstrap footer example */
+  margin-bottom: 40px; /*this is from Bootstrap footer example*/
+  /*background-color: #adb7c1 !important;*/
+}
+
+.btn {
+	transition: background-color 300ms ease-out;
+}
+
+.center-block {
+	float: none !important;
+}
+
+.calendar_table td {
+	margin: 0;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	width: 167.14px;
+	height: 110px;
+	overflow: hidden;
+	background-color: white;
+}
+
+.calendar_table {
+	border: 1px solid black;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+				0px 10px 20px rgba(0,0,0,0.05),
+				0px 20px 20px rgba(0,0,0,0.05),
+				0px 30px 20px rgba(0,0,0,0.05);
+}
+
+.form-submit {
+	margin: 9px 0 !important;
+}
+
+/*Styles for the user-specific events table*/
+.user_events_table {
+	font-family: 'Arial';
+	margin: 25px auto;
+	border-collapse: collapse;
+	border: 1px solid #eee;
+	border-bottom: 2px solid #00cccc;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+	margin-top: 0;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.user_events_table thead tr th {
+	font-family: georgia;
+	text-align: center;
+}
+
+.user_events_table td {
+	white-space: nowrap;
+}
+
+.user_events_table tr:hover {
+	background: #f4f4f4;
+}		
+.user_events_table tr:hover td {
+	color: #555;
+}
+.user_events_table th, .user_events_table td {
+	color: #7a7a7a;
+	border: 1px solid #eee;
+	padding: 0px 25px;
+	border-collapse: collapse;
+	height: 41px !important;
+}		
+.user_events_table th {
+	background: #00cccc;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.user_events_table th.last {
+	border-right: none;
+}
+/* End user-specific events table styles*/		
+
+/*Styles for the user table on adduser.php*/
+.user_table {
+	text-align: center; 
+	border: 1px solid gray;
+}
+.user_table thead tr {
+	text-align: center; 
+	border-bottom: 1px solid black; 
+	color: #337ab7;
+	height: 30px; 
+	text-align: center; 
+	background-color: #F0F0F0;
+	font-family: georgia;
+}
+.user_table th {
+	text-align: center; 
+	border: 1px solid #CCCCCC;
+}
+.user_table tr td {
+	height: 30px; 
+	vertical-align: middle; 
+	padding: 0px 8px; 
+	border: 1px solid #CCCCCC;
+}
+.user_table td:hover {
+	background-color: #FFFFFF;
+}
+.user_table form {
+	margin: 0; 
+	padding: 0;
+}
+.user_table form input[type=submit] {
+	margin: 0; 
+	padding: 1px 4px;
+}
+/*End adduser.php user table styles*/
+
+.no_bottom_margin {
+	margin-bottom: 0px !important;
+}
+
+.panel-default {
+	background-color: #F0EFEF !important;
+}
+
+form .month_nav {
+	padding: 5px 12px !important;
+	color: #337ab7;
+}
+
+.calendar_day {
+	font-family: georgia;
+	color: #4D4D4D;
+	font-size: 16px; 
+	font-weight: 600;
+}
+
+@media(min-width: 768px) {
+	.right_align {
+		text-align: right;
+	}
+}
+
+.table_head {
+	text-align: center;
+}
+
+h5 {
+	text-align: left; 
+	margin-top: 0 !important; 
+	font-weight: bold;"
+}
+
+.calendar_table td a {
+	display: block;
+    border: none;
+    margin: 2px;
+    padding: 2px;
+    font-size: 11px;
+    background-color: #DEF;
+    text-align: left;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.weekdays {
+	height: 20px;
+	border-top: 1px solid white;
+	font-family: georgia;
+	border-left: 1px solid white;
+}
+
+.weekdays td {
+	height: 16px;
+	padding: 2px 2px;
+	color: #FFFFFF;
+	background-color: #337ab7;
+	font-weight: 500;
+	font-size: 16px;
+	border: 1px solid white;
+	border-bottom: 1px solid gray;
+	/*border-top: 1px solid white;*/
+}
+
+.calendar_table td:hover {
+       background-color: #FFFFCC;
+       z-index: 1;
+       -moz-box-shadow: 0 0 10px #789;
+       -webkit-box-shadow: 0 0 10px #789;
+       box-shadow: 0 0 10px #789;
+}
+
+h2, p {
+	/*margin: 0 auto 14px;*/
+	text-align: left;
+}
+
+legend {
+	text-align: center;
+}
+
+.fill {
+	background-color: #f1f1f1;
+	/*background-color: #E8E8E8;*/
+}
+
+.center {
+	text-align: center;
+}
+
+/*Styling for event type <a> color backgrounds*/
+.assessment {
+	background-color: #d9534f; /*red*/
+	transition: background-color 300ms ease-out;
+}
+.assessment:hover {
+	/*background-color: #c34a47;*/
+	background-color: #ad423f;
+	/*color: gray;*/
+}
+.install {
+	background-color: #5cb85c;  /*green*/
+	transition: background-color 300ms ease-out;
+}
+.install:hover {
+	background-color: #198c19; /*#52a552;*/
+}
+.sustain {
+	background-color: #eca9a7; /*light red*/
+	transition: background-color 300ms ease-out;
+}
+.sustain:hover {
+	background-color: #d9534f;
+	/*background-color: #e48683;*/ 
+}
+.workshop {
+	background-color: #f9c314; /*gold*/
+	transition: background-color 300ms ease-out;
+}
+.workshop:hover {
+	background-color: #FFA500; /*#e0af12;*/
+}
+.vacation {
+	background-color: #84afd3; /*blue*/
+	transition: background-color 300ms ease-out;
+}
+.vacation:hover {
+	background-color: #337ab7;
+	/*color: white;*/
+}
+.followup {
+	background-color: #bde2bd; /*light green*/
+	transition: background-color 300ms ease-out;
+}
+.followup:hover {
+	background-color: #6cbf6c;
+}
+.travel {
+	background-color: #b2b2b2; /*gray*/
+	transition: background-color 300ms ease-out;
+}
+.travel:hover {
+	background-color: #8c8c8c;
+	/*color: white;*/
+}
+
+/*Styling for error and success messages*/
+p.error {
+	color: red; 
+	margin-top: 5px;
+}
+
+p.success {
+	color: green; 
+	margin-top: 5px;
+}
+
+.weekdays td:hover,td.fill:hover {
+	background-color: #BCD;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	
+}
+
+.weekdays td:hover {
+	/*background-color: #BCF;*/
+	background-color: #337ab7;
+}
+
+.today  {
+	background-color: #d8d8d8;
+}
+
+.calendar_table td a:hover {
+	/*
+	background-color: #BCF;
+	z-index: 2;
+	-moz-box-shadow: 0 0 6px #789;
+	-webkit-box-shadow: 0 0 6px #789;
+	box-shadow: 0 0 6px #789;
+	*/
+	text-decoration: none;
+	color: #4c4c4c;
+}
+
+/* Sticky footer styles*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #000;
+  vertical-align: center;
+}

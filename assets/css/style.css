@@ -1,0 +1,624 @@
+html {  
+	/*This is from Bootstrap footer example*/  
+	position: relative;  
+	min-height: 100%;
+}
+
+body {  
+	padding-top: 60px;   
+	/* Move down content because we have a fixed navbar that is 50px tall - from Bootstrap footer example */  
+	margin-bottom: 40px; 
+	/*this is from Bootstrap footer example*/  
+	/*background-color: #adb7c1 !important;*/
+}
+
+/*Sidebar styles*/
+@media (min-width: 768px) {
+	.sidebar {
+		position: fixed !important; /* The !important was added to keep the navigation pane on the left, allowing the content to float next to it */
+		top: 41px;
+		bottom: 0;
+		left: 0;
+		z-index: 1000;
+		display: block;
+		padding: 20px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		background-color: #eee;
+		border-right: 1px solid #ddd;
+	}
+}
+
+/* Soft, ocean blue for links etc */
+.link-blue {
+	color: rgb(9, 114, 165);
+}
+/* Make sure that side nav main heading does not change to gray when hover event occurs */
+.nav>li.active>a:focus, .nav>li.active>a:hover {
+	background-color: #428bca !important;
+}
+.nav-sidebar label {
+	margin-left: 15px;
+}
+.nav-sidebar select , .nav-sidebar input[type="text"]{
+	margin-left: 15px;
+	width: 93%;
+	margin-bottom: 5px;
+}
+.nav-sidebar {
+  margin-bottom: 0px !important;
+}
+.active {
+	background-color: #428bca !important; /*nav sidebar <li> style*/
+}
+.active:hover: {
+	background-color: #428bca !important;
+}
+.sidebar_heading {
+	padding: 10px 15px 10px 3px !important;
+}
+.sidebar_button {
+	margin-left: 15px !important; /* make sure sidebar submit button is inline with rest of menu text */
+}
+.sidebar_hr {
+	margin-bottom: 10px !important;
+}
+.glyphicon-user:hover {
+	color: #337ab7;
+}
+.modules_button {
+	background-color: transparent;
+	border: none;
+	color: #9d9d9d;
+	padding-top: 15px;
+}
+.modules_button:hover, .modules_button:focus {
+	color: #FFF;
+}
+.logout_button {
+	background-color: transparent;
+	border: none;
+	color: #FFF;
+}
+.btn.logout_button:hover, .btn.logout_button:focus {
+	/*color: #FFF;*/
+	color: #D34836;
+}
+.logout_link:hover {
+	color: #FFF;
+}
+/*These are from Bootstrap's dashboard template example.  Took out because they cause <select> and <input> to span past the edge*
+.nav-sidebar {
+  margin-right: -21px; 
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+*/
+/**********************/
+
+/**Loader CSS**/
+@media (min-width: 992px) {
+	.loader {
+		left: 16.5% !important;
+	}
+}
+.loader {
+  /*added by me*/
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  /*end add*/
+  /*margin: 100px auto;*/
+  font-size: 20px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: fixed;
+  /*position: relative;*/
+  text-indent: -9999em;
+  -webkit-animation: load5 1.1s infinite ease;
+  animation: load5 1.1s infinite ease;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load5 {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #4B4949, 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.5), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.7), 1.8em -1.8em 0 0em #4B4949, 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.5), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.7), 2.5em 0em 0 0em #4B4949, 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.5), 2.5em 0em 0 0em rgba(75, 73, 73, 0.7), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.5), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.7), 0em 2.5em 0 0em #4B4949, -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.5), 0em 2.5em 0 0em rgba(75, 73, 73, 0.7), -1.8em 1.8em 0 0em #4B4949, -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.5), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.7), -2.6em 0em 0 0em #4B4949, -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.5), -2.6em 0em 0 0em rgba(75, 73, 73, 0.7), -1.8em -1.8em 0 0em #4B4949;
+  }
+}
+@keyframes load5 {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #4B4949, 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.5), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.7), 1.8em -1.8em 0 0em #4B4949, 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.5), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.7), 2.5em 0em 0 0em #4B4949, 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.5), 2.5em 0em 0 0em rgba(75, 73, 73, 0.7), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.5), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.7), 0em 2.5em 0 0em #4B4949, -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.2), -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.5), 0em 2.5em 0 0em rgba(75, 73, 73, 0.7), -1.8em 1.8em 0 0em #4B4949, -2.6em 0em 0 0em rgba(75, 73, 73, 0.2), -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.5), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.7), -2.6em 0em 0 0em #4B4949, -1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(75, 73, 73, 0.2), 1.8em -1.8em 0 0em rgba(75, 73, 73, 0.2), 2.5em 0em 0 0em rgba(75, 73, 73, 0.2), 1.75em 1.75em 0 0em rgba(75, 73, 73, 0.2), 0em 2.5em 0 0em rgba(75, 73, 73, 0.2), -1.8em 1.8em 0 0em rgba(75, 73, 73, 0.5), -2.6em 0em 0 0em rgba(75, 73, 73, 0.7), -1.8em -1.8em 0 0em #4B4949;
+  }
+}
+
+/** End loader css**/
+
+.btn {	
+	transition: .8s;
+}
+
+.center-block {	
+	float: none !important;
+}
+
+li .sidebar_main_heading:hover {
+	background-color: #428bca !important;
+}
+
+.calendar_table {	
+	box-shadow: 0px 6px 30px -2px rgba(0,0,0,0.23);
+	width: 99% !important;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.calendar_table td {	
+	margin: 0;	
+	border-left: 1px solid gray;	
+	border-right: 1px solid gray;	
+	border-bottom: 1px solid gray;	
+	width: 167.14px;	
+	height: 110px;	
+	overflow: hidden;	
+	background-color: white;
+}
+
+.form-submit {	
+	margin: 9px 0 !important;
+}
+
+.navbar-form {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+
+
+/**Styles for jQuery UI tabs and styles to prevent jQuery tabs FUC**/
+.ul_tabs {
+	margin: 0;
+	padding: .2em .2em 0 !important;
+	border-bottom-right-radius: 4px !important;
+	border-bottom-left-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+	border: 1px solid #e78f08 !important;
+	background: #f6a828 !important;
+	color: #fff !important;
+	font-weight: bold !important;
+}
+
+.li_tab {
+	list-style: none !important;
+    float: left !important;
+    position: relative !important;
+	
+    top: 0 !important;
+	/**Had to take out the below, because it was causing the orange line to always stay below the tab.  Makes it hard to know which tab is being viewed.
+    margin: 1px .2em 0 0 !important;
+    border-bottom-width: 0 !important;
+    padding: 0 !important;*/
+    white-space: nowrap !important;
+	background: #FFF !important;
+}
+.a_tab {
+	float: left !important;
+    padding: .5em 1em !important;
+    text-decoration: none !important;
+}
+
+/*Instruction to change tabs heading background to dark blue*/
+.ui-widget-header {
+	background: rgb(9, 114, 165) !important;
+}
+.ul_tabs {
+	border: 1px solid rgb(9, 114, 165) !important;
+	background: rgb(9, 114, 165) !important;
+}
+
+/*Styles for the user-specific events table*/
+.user_events_table {
+	font-family: 'Arial';
+	margin: 25px auto;
+	border-collapse: collapse;
+	border: 1px solid #eee;
+	box-shadow: 0px 6px 30px -1px rgba(0,0,0,0.23);
+	margin-top: 0;
+	/*padding-left: 3px;
+	padding-right: 3px;*/
+	width: 99% !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.user_events_table thead tr th {
+	font-family: georgia;
+	text-align: center;
+}
+
+.user_events_table tr td {
+	padding: 0px 8px !important;
+	vertical-align: middle !important;
+	border: 1px solid #CCCCCC;
+}
+
+.user_events_table tr:hover {	
+	background: #f4f4f4;
+}
+
+.user_events_table tr:hover td {
+	color: #555;
+}
+
+.user_events_table th, .user_events_table td {
+	color: #555;
+	border: 1px solid #eee;
+	padding: 0px 25px;
+	border-collapse: collapse;
+	height: 41px !important;
+	white-space: nowrap;
+	text-align: center;
+}	
+	
+.user_events_table th {
+	background: #00cccc;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.user_events_table th.last {
+	border-right: none;
+}
+/* End user-specific events table styles*/
+
+/*Styles for the user table on adduser.php*/
+.user_table {
+	text-align: center;
+ 	/* border: 1px solid gray; **Take out for dataTables*/
+}
+
+table.dataTable.no-footer {
+	border-bottom: none !important;
+}
+
+.user_table thead tr {
+	text-align: center;
+ 	border-bottom: 1px solid black;
+ 	color: #337ab7;	
+	height: 30px;
+ 	text-align: center;
+ 	background-color: #F0F0F0;
+	font-family: georgia;
+}
+
+.user_table tr th {
+	text-align: center; 
+	/*border: .8px solid #CCCCCC !important;*/
+}
+
+.user_table tr td {
+	height: 30px;
+ 	vertical-align: middle !important;
+ 	padding: 0px 8px !important;
+ 	border: .8px solid #CCCCCC;
+}
+
+.user_table td:hover {
+	background-color: #EDEDED;
+}
+
+.user_table form {
+	margin: 0;
+ 	padding: 0;
+}
+
+.user_table form input[type=submit] {
+	margin: 0;
+ 	padding: 1px 4px;
+}
+/*End adduser.php user table styles*/
+
+table#user_doc_table thead tr th, table#user_doc_table tbody tr td {
+	white-space: nowrap;
+}
+
+.no_bottom_margin {
+	margin-bottom: 0px !important;
+}
+
+.min_bottom_margin {
+	margin-bottom: 1px !important;
+}
+
+.min_top_margin {
+	margin-top: 0px !important;
+}
+
+.panel-default {
+	background-color: #F0EFEF !important;
+}
+
+form .month_nav {
+	padding: 3px 12px !important;
+	color: #337ab7;
+}
+
+.calendar_day {
+	font-family: georgia;
+	color: #4D4D4D;
+	font-size: 16px; 
+	font-weight: 600;
+}
+
+@media(min-width: 768px) {
+	.right_align {
+		text-align: right;	
+	}
+}
+
+.table_head {
+	text-align: center;
+}
+
+h5 {	
+	text-align: left;
+ 	margin-top: 0 !important;
+ 	font-weight: bold;
+}
+
+.calendar_table td a {
+	display: block;
+    border: none;
+    margin: 2px; 
+	padding: 2px;
+    font-size: 11px;
+    /*background-color: #DEF;*/
+    text-align: left;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px; 
+	text-decoration: none;
+    color: black; 
+	font-weight: bold;
+}
+
+.weekdays {
+	height: 20px;
+	border-top: 1px solid white;
+	font-family: georgia;
+	border-left: 1px solid white;
+}
+
+.weekdays td {
+	height: 16px;
+	padding: 2px 2px;
+	color: #FFFFFF;
+	background-color: #337ab7;
+	font-weight: 500;
+	font-size: 16px;
+	border: 1px solid white;
+	border-bottom: 1px solid gray;
+	/*border-top: 1px solid white;*/
+}
+
+.calendar_table td:hover {
+       background-color: #FFFFCC;
+       z-index: 1;
+       -moz-box-shadow: 0 0 10px #789;
+       -webkit-box-shadow: 0 0 10px #789;
+       box-shadow: 0 0 10px #789;
+}
+
+h2, p {	
+	/*margin: 0 auto 14px;*/
+	text-align: left;
+}
+
+legend {
+	text-align: center;
+}
+
+.fill {
+	background-color: #f1f1f1;
+	/*background-color: #E8E8E8;*/
+}
+
+.center {
+	text-align: center;
+}
+
+/*Styling for event type <a> color backgrounds*/
+.assessment {	
+	background-color: #d9534f; /*red*/
+	transition: background-color 300ms ease-out;
+}
+
+.assessment:hover {
+	/*background-color: #c34a47;*/
+	background-color: #ad423f;
+	/*color: gray;*/
+}
+
+.install {
+	background-color: #5cb85c;
+	/*green*/
+	transition: background-color 300ms ease-out;
+}
+
+.install:hover {
+	background-color: #198c19;
+	/*#52a552;*/
+}
+
+.sustain {
+	background-color: #eca9a7;
+	/*light red*/
+	transition: background-color 300ms ease-out;
+}
+
+.sustain:hover {
+	background-color: #d9534f;
+	/*background-color: #e48683;*/
+}
+
+.workshop {
+	background-color: #f9c314;
+	/*gold*/
+	transition: background-color 300ms ease-out;
+}
+
+.workshop:hover {
+	background-color: #FFA500;
+	/*#e0af12;*/
+}
+
+.vacation {
+	background-color: #84afd3;
+	/*blue*/
+	transition: background-color 300ms ease-out;
+}
+
+.vacation:hover {
+	background-color: #337ab7;
+	/*color: white;*/
+}
+
+.followup {
+	background-color: #bde2bd;
+	/*light green*/
+	transition: background-color 300ms ease-out;
+}
+
+.followup:hover {
+	background-color: #6cbf6c;
+}
+
+.travel {
+	background-color: #b2b2b2;
+	/*gray*/
+	transition: background-color 300ms ease-out;
+}
+
+.travel:hover {
+	background-color: #8c8c8c;
+	/*color: white;*/
+}
+
+/*Styling for error and success messages*/
+p.error {
+	color: red;
+ 	margin-top: 5px;
+}
+
+p.success {
+	color: green;
+ 	margin-top: 5px;
+}
+
+.weekdays td:hover,td.fill:hover {
+	background-color: #BCD;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.weekdays td:hover {
+	/*background-color: #BCF;*/
+	background-color: #337ab7;
+}
+
+.today  {
+	background-color: #d8d8d8;
+}
+
+.calendar_table td a:hover {
+	/*background-color: #BCF;
+	z-index: 2;
+	-moz-box-shadow: 0 0 6px #789;
+	-webkit-box-shadow: 0 0 6px #789;
+	box-shadow: 0 0 6px #789;
+	*/
+	text-decoration: none;
+	color: #4c4c4c;
+}
+/*
+@media (min-width: 768px) {
+	.glyphicon-info-sign {
+		margin-left: 90%;
+	}
+}
+.glyphicon-info-sign {
+	font-size: 15px;
+}*/
+/* Sticky footer styles*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  font-weight: normal;
+  color: #ddd;
+  /*background-color: #292c2f;*/
+}
+
+@media (min-width: 768px) {
+	.footer p {
+		padding-top: 5px;
+		text-align: right;
+	}
+}

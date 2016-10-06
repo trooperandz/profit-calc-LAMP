@@ -1,0 +1,76 @@
+body {
+	background: #f5f5f5;
+}
+
+label {
+	font-weight: 300;
+}
+
+h2 {
+	font-weight: 300;
+}
+
+table {
+	padding: 12px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+table tbody tr td {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	color: #4d4d4d;
+	text-align: center;
+	white-space: nowrap;
+}
+
+table thead tr th {
+	text-align: center;
+	white-space: nowrap;
+}
+
+div#user_doc_table_info.dataTables_info {
+	font-weight: 300;
+}
+
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Make form input postfix same color of submit button, and changed text color to white */
+.input-group-addon {
+	background-color: #337ab7;
+	color: #fff;
+}
+
+.edit-file-submit {
+	margin-top: 10px !important;
+}
+
+/* Override the loader style present on the profitability calculator 
+ * (was moving to the right to make room for the dashboard), but
+ * there is no dashboard for the docs page.
+**/
+@media (min-width: 992px) {
+	.loader {
+		left: 0% !important;
+	}
+}
+
+/* Override footer style */
+footer {
+	position: fixed !important;
+	background-color: #222;
+	border-color: #080808
+}
+/* Center the footer <p> text */
+.footer p {
+	padding-top: 10px;
+}
+.footer-push {
+	height: 38px;
+}
+/* Make footer copyright text a pleasing light-blue color */
+.footer-copyright {
+	color: #337ab7;
+}

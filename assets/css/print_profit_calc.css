@@ -1,0 +1,168 @@
+/*
+ * Printer styles for profitability calculator
+ * File: profit_calc.css
+ *
+**/
+@media print {
+	.sidebar, .modal, .privacy_pipe, nav, a, input[type=submit], li, footer {
+		display: none;
+	}
+	input {
+		border: none;
+		text-align: center;
+		font-size: 1em;
+		font-family: Trebuchet;
+	}
+	ul {
+		display: none;
+	}
+	table {
+		width: 98%;
+		page-break-inside: avoid;
+	}
+	table td {
+		border-bottom: 1px solid #CCCCCC;
+	}
+	h4 {
+		margin-bottom: 6px;
+	}
+	/**Do not display printer icon on print page.  Would also mess up spacing from the heading to the <hr>**/
+	.printer_p {
+		display: none;
+	}
+	.section_title {
+		padding: 0;
+		margin: 0;
+	}
+	.profit_summ_table th {
+		background-color: #dff0d8;
+	}
+	.cost_table {
+		padding-bottom: 10px;
+	}
+	.cost_table input {
+		text-align: center;
+		font-size: 1em;
+		font-family: Trebuchet;
+	}
+	.cost_table td {
+		height: 30px;
+	}
+	.cost_table td.bg-success {
+		background-color: #dff0d8;
+	}
+	.blue {
+	/*Used for service type main titles*/
+	color: blue;
+}
+}
+
+table {
+	width: 100%;
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+table thead tr th{
+	background: whitesmoke;
+	text-align: center;
+}
+table td {
+	text-align: center;
+	/*border: none;*/
+	vertical-align: middle !important;
+}
+
+h3 {
+	margin-top: 4px;
+}
+hr {
+	border: solid #dddddd;
+	border-width: 1px 0 0;
+	margin-top: 0;
+}
+
+/** Custom class styles **/
+.input-group-addon {
+	padding: 0px 5px;
+	margin: 0;
+	height: 20px !important;
+}
+.unit_input {
+	text-align: center;
+	margin: 0 !important;
+	height: 20px !important;
+	padding: 0px !important;
+	/*background-color: #dff0d8;*/
+}
+.cost_input { 
+	/*Styling for tab1 input elements*/
+	padding: 0px !important;
+	height: 30px !important;
+}
+.ops_input { 
+	/*Styling for tab2 input elements*/
+	padding: 0px !important;
+	height: 30px !important;
+	margin-bottom: 0px !important;
+}
+.pen_input {
+	text-align: center;
+	/*background-color: #d9edf7;*/
+	background-color: #dff0d8;
+}
+.text-underline {
+	text-decoration: underline;
+}
+
+.red_label {
+	/*Used for table subtitles*/
+	color: #c7254e;
+}
+.dbl_underline {
+	text-decoration:underline;
+	border-bottom: 1px solid #000;
+}
+.bg-slate {
+	background-color: #b7bfc7; /*slate*/
+}
+.bg-blue {
+	background-color: #99bcdb; /*light sky blue*/
+}
+.bg-lt-blue {
+	background-color: #c1d7e9;
+}
+.section_title {
+	/*Styles for section titles*/
+	padding-top: 10px;
+}
+.svc_subtitle {
+	font-size: 15px;
+}
+
+/**Days table custom styles**/
+.days_table {
+	margin-top: 5px;
+}
+
+/**Profit Analysis page custom styles**/
+.express_table {
+	margin-bottom: 0;
+	/*margin-top: 5px;*/
+}
+.express_input {
+	margin-bottom: 0 !important;
+	padding: 0px !important;
+	height: 30px !important;
+}
+.express_table td {
+	height: 30px;
+}
+
+/**Cost Avg page custom styles**/
+.cost_avg_table th {
+	text-align: left;
+}
